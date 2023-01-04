@@ -71,7 +71,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: '/category/overview',
+            docId: '/category/callsheets',
             position: 'left',
             label: 'Docs',
           },
@@ -86,15 +86,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/home/create-a-page',
-              },
-            ],
-          },
+         
           {
             title: 'Community',
             items: [
