@@ -21,8 +21,6 @@ function CardContainer({href, children}) {
 }
 
 function getCardIconName(title){
-  console.log(typeof title);
-
 return  title.toLowerCase() + '.svg';
 }
 
@@ -74,7 +72,7 @@ function CardLink({item}) {
   const icon = isInternalUrl(item.href) ? '📄️' : '🔗';
   const doc = useDocById(item.docId ?? undefined);
 
-  console.log(doc);
+
   return (
     <CardLayout
       href={item.href}
@@ -85,7 +83,6 @@ function CardLink({item}) {
   );
 }
 export default function DocCard({item}) {
-  console.log(item);
   switch (item.type) {
     case 'link':
       return <CardLink item={item} />;
