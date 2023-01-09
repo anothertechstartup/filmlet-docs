@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://lustrous-marigold-6b1a74.netlify.app/',
+  title: 'filmlet documentation',
+  tagline: 'Focus on filmmaking. Not planning.',
+  url: 'https://docs.filmlet.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,18 +37,18 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-       /*    editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', */
+          /*    editUrl:
+               'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', */
         },
         blog: {
           postsPerPage: 'ALL',
           blogSidebarTitle: 'Changelog',
           showReadingTime: false,
-          
+
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-         /*  editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', */
+          /*  editUrl:
+             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', */
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -65,7 +65,7 @@ const config = {
         logo: {
           alt: 'filmlet logo',
           src: 'img/logo.svg',
-          
+
           height: 100,
         },
         items: [
@@ -75,7 +75,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Changelog', position: 'right'},
+          { to: '/blog', label: 'Changelog', position: 'right' },
           {
             href: 'https://web.filmlet.app',
             label: 'Web-App',
@@ -86,7 +86,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-         
+
           {
             title: 'Community',
             items: [
