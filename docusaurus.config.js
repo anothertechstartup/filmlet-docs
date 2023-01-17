@@ -125,6 +125,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  scripts: [{ src: '/js/script.js', defer: true, 'data-domain': 'docs.filmlet.app' }],
 };
 
 module.exports = config;
