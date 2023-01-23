@@ -7,8 +7,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
 
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
-
   title: 'filmlet documentation',
   tagline: 'Focus on filmmaking. Not planning.',
   url: 'https://docs.filmlet.app',
@@ -30,6 +28,24 @@ module.exports = {
     locales: ['en'],
   },
 
+  themes:[
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        indexDocs:true,
+        indexPages:true,
+        language:['en'],
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
+      }),
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -38,6 +54,9 @@ module.exports = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
+          sidebarCollapsed:false
+      
+          
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           /*    editUrl:
@@ -68,8 +87,9 @@ module.exports = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+
       navbar: {
-        title: 'filmlet',
+  
         logo: {
           alt: 'filmlet logo',
           src: 'img/logo.svg',
@@ -77,12 +97,7 @@ module.exports = {
           height: 100,
         },
         items: [
-          {
-            type: 'doc',
-            docId: '/category/callsheets',
-            position: 'left',
-            label: 'Docs',
-          },
+
           { to: '/blog', label: 'Changelog', position: 'right' },
           {
             href: 'https://web.filmlet.app',
