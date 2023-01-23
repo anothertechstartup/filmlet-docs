@@ -5,7 +5,10 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+module.exports = {
+
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+
   title: 'filmlet documentation',
   tagline: 'Focus on filmmaking. Not planning.',
   url: 'https://docs.filmlet.app',
@@ -60,6 +63,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: 'filmlet',
         logo: {
@@ -84,48 +92,31 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
 
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            label: 'Imprint',
+            href: 'https://filmlet.app/imprint'
           },
           {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
+            label: 'Privacy',
+            href: 'https://filmlet.app/privacy'
           },
+  
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} - another tech startup UG`,
       },
-      prism: {
+       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
+      }, 
     }),
   scripts: [{ src: '/js/script.js', defer: true, 'data-domain': 'docs.filmlet.app' }],
-};
 
-module.exports = config;
+
+
+
+}
+
+
