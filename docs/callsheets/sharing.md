@@ -1,21 +1,19 @@
 ---
 sidebar_position: 1
+title: Sharing
 ---
 
 # Sharing
 
 :::danger NOTe
- Callsheets need to be [published](./publishing.mdx) in order to be visible to the people.
+Callsheets need to be [published](./publishing.mdx) in order to be visible to the people.
 :::
-
-
 
 ## Cast & Crew
 
-Call sheets are shared automatically with cast and crew, if the individual has a filmlet account. The callsheet can be viewed on the home screen in the callsheet list. 
+Call sheets are shared automatically with cast and crew, if the individual has a filmlet account. The callsheet can be viewed on the home screen in the callsheet list.
 
 Through cast & crew sharing, the calltime on the callsheet is automatically adjusted to the associated department.
-
 
 ## Share by URL
 
