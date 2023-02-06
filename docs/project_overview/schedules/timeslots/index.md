@@ -14,7 +14,7 @@ When creating the timeslot, one of the defined types must be selected.
 ### Move
 
 When a move element is used in the flow, the location of all subsequent timeslots changes to the location selected in the move.
-With the [smart move](smart_move.mdx) functionality a google maps is route calculated.
+With the [smart move](smart_move.md) functionality a google maps is route calculated.
 
 ### Shooting
 

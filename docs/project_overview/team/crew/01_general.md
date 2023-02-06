@@ -1,5 +1,5 @@
 ---
-title: Cast
+title: Crew
 ---
 
 # General
@@ -8,4 +8,4 @@ title: Cast
 
 ** Contact ** A contact associated to the cast item.
 
-** Group ** A [cast group](02_cast_groups.mdx).
+** Group ** A [department](02_departments.md).
