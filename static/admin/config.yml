@@ -16,7 +16,7 @@ collections:
     widget: "list"
     create: true
     nested:
-      depth: 3
+      depth: 5
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - { name: title, label: Title, widget: string }
