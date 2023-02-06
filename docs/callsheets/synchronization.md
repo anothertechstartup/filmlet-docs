@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Synchronization
+title: Callsheet Sync
 ---
 
 # Synchronization
