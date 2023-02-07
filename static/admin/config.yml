@@ -16,10 +16,12 @@ collections:
     widget: "list"
     create: true
     nested:
-      depth: 5
+      depth: 100
+      summary: '{{title}}'
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - { name: title, label: Title, widget: string }
       - { name: body, label: Body, widget: markdown }
       - { name: slug, label: Url, widget: string }
       - { name: sidebar_position, label: Sidebar position, widget: number }
+    meta: { path: {label: 'Path', widget: 'string', index_file: slug }}
